@@ -1,0 +1,5 @@
+grpc-host: ":50052"
+symmetric-key: "12345123451234512345123451234512"
+pypose-service: ../../pypose/main.py
+upload-dir: ../../pypose/uploads
+pypose-output-dir: ../../pypose/analysed

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package protocol;
+
+option go_package = "/protocol";
+
+import "ping.proto";
+import "pose_analyse_video.proto";
+
+service Pose {
+  rpc Ping(PingReq) returns (PingRes);
+  rpc AnalyseVideo(AnalyseVideoReq) returns (AnalyseVideoRes);
+}

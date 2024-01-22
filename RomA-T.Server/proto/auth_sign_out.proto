@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package protocol;
+
+option go_package = "/protocol";
+
+message SignOutReq {
+  string user = 1;
+}
+
+message SignOutRes {}

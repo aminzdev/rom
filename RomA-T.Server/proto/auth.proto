@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package protocol;
+
+option go_package = "/protocol";
+
+import "ping.proto";
+import "auth_sign_in.proto";
+import "auth_sign_up.proto";
+import "auth_sign_out.proto";
+
+service Auth {
+  rpc Ping(PingReq) returns (PingRes);
+  rpc SignIn(SignInReq) returns (SignInRes);
+  rpc SignUp(SignUpReq) returns (SignUpRes);
+  rpc SignOut(SignOutReq) returns (SignOutRes);
+}
